@@ -14,13 +14,16 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 
 question = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 
-print(associations[14])
-
 if question == 'e':
     message = input("Message: ")
-    for x in message:
-        print(associations.find(x))
     key = input("Key: ")
+    for x in message:
+        print([associations.find(x)])
+    for y in key:
+        print([associations.find(y)])
+    print(''.join([associations.find(x)],[associations.find(y)])
+
+"""
 elif question == 'd':
     message = input("Message: ")
     key = input("Key: ")
@@ -28,3 +31,4 @@ elif question == 'q':
     print("Goodbye!")
 else:
     print("Did not understand command, try again.")
+"""
