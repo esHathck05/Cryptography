@@ -18,10 +18,10 @@ if question == 'e':
     message = input("Message: ")
     key = input("Key: ")
     for x in message:
-        print([associations.find(x)])
-    for y in key:
-        print([associations.find(y)])
-    print(''.join([associations.find(x)],[associations.find(y)])
+        print(list(x))
+        #print(associations.find(x))
+    #for y in key:
+        #print(associations.find(y))
 
 """
 elif question == 'd':
