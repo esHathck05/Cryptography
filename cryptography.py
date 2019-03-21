@@ -1,9 +1,9 @@
 """
 cryptography.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Esther Hacker
+Credit: n/A
 
-Assignment:
+Assignment: Cryptography
 
 Write and submit a program that encrypts and decrypts user data.
 
@@ -21,6 +21,7 @@ ecommand = []
 bothdifference = []
 dcommand = []
 
+
 if question == 'e':
     
     message = input("Message: ")
@@ -35,7 +36,7 @@ if question == 'e':
     for z in range(0, len(messagenmbrs)):
         bothnmbrs.append(messagenmbrs[z] + keynmbrs[z%len(keynmbrs)])
     for a in bothnmbrs:
-        ecommand.append(associations[1%85])
+        ecommand.append(associations[a%85])
     
     print(''.join(ecommand))
     
